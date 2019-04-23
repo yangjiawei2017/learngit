@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="HelloWeb">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="spring-web-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-web-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-web-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jdbc-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-beans-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-support-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-websocket-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jms-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-messaging-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-messaging-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webmvc-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-orm-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-beans-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aop-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-orm-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-tx-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-expression-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jdbc-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-web-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-beans-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-indexer-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-indexer-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-tx-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-websocket-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-messaging-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-messaging-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jcl-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jcl-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-instrument-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-instrument-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-test-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webmvc-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aspects-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aspects-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aop-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-oxm-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-oxm-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-instrument-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-instrument-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-support-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-instrument-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-instrument-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-expression-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aspects-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aspects-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webflux-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webflux-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webflux-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webflux-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-core-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jms-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aspects-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aspects-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-support-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-indexer-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-indexer-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jcl-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jcl-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-core-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-oxm-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-oxm-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webflux-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webflux-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-indexer-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-indexer-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-test-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-messaging-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-messaging-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-aop-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-orm-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-orm-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-websocket-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-test-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-test-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-context-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jcl-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jcl-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-tx-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-tx-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-core-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-5.0.4.RELEASE-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-webmvc-5.0.4.RELEASE-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-oxm-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-oxm-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jms-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jms-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-5.0.4.RELEASE-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-expression-5.0.4.RELEASE-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-jdbc-5.0.4.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/F:/迅雷下载/spring-framework-5.0.4.RELEASE/libs/spring-jdbc-5.0.4.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="HelloWeb"/>
+        <property name="java-output-path" value="/HelloWeb/build/classes"/>
+    </wb-module>
+</project-modules>
