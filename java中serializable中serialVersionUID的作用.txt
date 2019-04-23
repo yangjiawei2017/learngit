@@ -1,0 +1,1 @@
+serialVersionUID的作用是进行版本控制，不加serialVersionUID的话第一次序列化和反序列化并不会出现问题，但是如果在序列化之后反序列化之前新增了一个或多个字段的话会导致反序列化的过程中报错，解决的方法就是添加serialVersionUID进行版本控制。
