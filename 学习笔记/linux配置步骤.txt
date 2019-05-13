@@ -1,0 +1,281 @@
+﻿update user set host = '%' where user = 'root' and host = 'localhost';
+执行完该语句后刷新权限表----flush privileges
+
+查看哪些端口被打开  netstat -anp
+关闭端口号  iptables -A OUTPUT -p tcp --dport 端口号 -j DROP
+打开端口号  iptables -A INPUT -p tcp --dport 端口号 -j ACCEPT
+
+修改mysql配置文件 bind-address  = 127.0.0.1
+
+
+/etc/init.d/mysql stop   停止mysql服务
+/etc/init.d/mysql start  启动mysql服务
+如果需要让mysql服务可以远程连接的话需要设置/etc/mysql/mysql.conf.d/mysqld.cnf修改bind-address=0.0.0.0
+
+解压 tar zxvf filename.tar
+压缩 tar czvf filename.tar dirname
+tar命令参数介绍
+c 建立压缩文档   z 有gzip属性的  v 有compress属性的  f 使用档案名字
+x 解压
+
+JAVA_HOME=/usr/java/jdk1.8.0
+PATH=$JAVA_HOME/bin:$PATH
+CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export JAVA_HOME
+export PATH
+export CLASSPATH
+
+更改bin目录下的.sh文件权限
+chmod u+ *.sh
+给.sh文件赋权限
+chmod 777 filename
+
+获取字符串长度  echo ${#string}
+查找字符串i和s在字符串中的位置  echo `expr index "${string} is"`
+
+
+
+*****************************************************************************
+linux权限管理
+文件；x可执行（文件的最高权限）
+目录：写是最高的权限
+r可以查询目录下文件名
+w修改目录结构的权限
+x进入目录
+0 没有任何权限  5（rx）可以进入查看  7（rwx）最高权限   1,4,6对目录没用
+
+linux的文件和目录可以有三个所有者概念
+u 所有者   g 所属组   o 其他人
+
+dr-xr-xr-x.2 root toot 4096 Jun 29 12:49 bin
+dr-xr-xr-x   可以拆成：d  r-x  r-x  r-x
+d：代表的是文件类型，在linux中常见的文件类型有三种
+d   目录
+-   二进制文件
+l   链接文件 link
+
+第一个r-x 所有者拥有的权限
+第二个r-x 所属组拥有的权限
+第三个r-x 其他人用于的权限
+
+r-4  w-2  x-1
+
+umask  可以用来修改和显示linux系统的默认权限
+************************************************************************
+这个命令是用来开启防火墙特定的端口的
+^C[root@yjw bin]firewall-cmd --zone=public --add-port=2181/tcp --permanent
+success
+[root@yjw bin]# firewall-cmd --reload
+
+将spring源码引入eclipse会少两个包，生成命令如下：
+jar cvf spring-cglib-repack-3.2.4.jar org\springframework\cglib
+jar cvf spring-objenesis-repack-3.2.4.jar org\springframework\objenesis
+
+&***********************************************************************
+find .| xargs grep -ri "string" -l
+打印出所有含string的文件的文件名
+
+
+redis
+http://redisdoc.com/index.html
+
+
+
+
+http://www.kaseng.top/
+https://rain.likeso.ml/
+https://plus.likeso.ml/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+二：软件安装
+
+ 2.1 安装vim指令
+
+　　sudo apt-get install vim
+
+ 2.2 安装unzip指令
+
+ 　　　　sudo apt-get install unace unrar zip unzip p7zip-full
+
+　　　　p7zip-rar sharutils rar uudeview mpack lha arj
+
+　　　　cabextract file-roller
+
+ 安装后，我还是无法执行zip指令，又输入了一次 apt install unzip(是zip还是unzip记不清了，ubuntun有提示) 
+
+ 2.3 安装ssh.
+
+ 　　　　$ sudo apt-get install openssh-server  
+
+　　　　系统将自动进行安装，安装完成以后，先启动服务：
+
+　　　　$ sudo /etc/init.d/ssh start  
+
+　　　　启动后，可以通过如下命令查看服务是否正确启动
+
+　　　　$ ps -ef|grep ssh如：
+
+　　　　xxxx ?00:00:00 sshd  
+
+　　　　如上表示启动ok。注意，ssh默认的端口是22，可以更改端口，更改后先stop，
+
+　　　　然后start就可以了。改配置在/etc/ssh/sshd_config下，如下所示。
+
+　　　　注意：安装完成后，shh还是无法通过root远程，客户端连接时会出错（无法登录：server responded "algorithm negotiation failed”），解决办法如下：
+
+　　　　修改ssh的配置文件 /etc/ssh/sshd_config
+
+　　　　在配置文件中添加：
+
+　　　　Ciphers aes128-cbc,aes192-cbc,aes256-cbc,aes128-ctr,aes192-ctr,aes256-ctr,3des-cbc,arcfour128,arcfour256,arcfour,blowfish-cbc,cast128-cbc　　
+
+　　　　MACs hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-sha1-96,hmac-md5-96
+
+　　　　KexAlgorithms diffie-hellman-group1-sha1,diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha1,diffie-hellman-group-exchange-sha256,ecdh-sha2-　　nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group1-sha1,curve25519-sha256@libssh.org
+
+　　　　重启sshd服务后，即可正常连接。
+
+　　　　sudo service ssh restart;
+
+　　　　正常连接后，还是无法使用root登陆，还需要修改一下sshd-config文件
+
+　　　　
+
+　　　　记得重启ssh,sudo service ssh restart;
+
+ 
+
+ 2.4 安装jdk
+
+ 　　　　tar -zxvf jdk-8u60-linux-x64.tar.gz
+
+   需要在本地把jdk-8u60-linux-x64.tar.gz下载后，通过ssh传输至java运行环境上.
+
+　　　　
+
+　　安装完成后，需要配置JAVA_HOME,PATH，配置路径在/etc/environment,
+
+　　JAVA_HOME=/usr/java/jdk1.7
+
+　　PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/java/jdk1.7/bin"
+
+　　配置完成后，需要更新一下environment,更新指令：source environment;
+
+　　现在通过 java -version，可以查询到jdk版本信息化
+
+　　
+
+ 
+
+ 2.5 安装mysql
+
+ Ubuntu上安装MySQL非常简单只需要几条命令就可以完成。
+		 
+		 sudo apt-get update
+
+　　1. sudo apt-get install mysql-server
+
+　　2. apt-get install mysql-client
+
+　　3.  sudo apt-get install libmysqlclient-dev
+
+安装过程中会提示设置密码什么的，注意设置了不要忘了，安装完成之后可以使用如下命令来检查是否安装成功：
+
+sudo netstat -tap | grep mysql
+
+通过上述命令检查之后，如果看到有mysql 的socket处于 listen 状态则表示安装成功。
+
+登陆mysql数据库可以通过如下命令：
+
+mysql -u root -p
+
+-u 表示选择登陆的用户名， -p 表示登陆的用户密码，上面命令输入之后会提示输入密码，此时输入密码就可以登录到mysql。
+
+当然也可以使用 mysq -u root -h 127.0.0.1 -p
+
+ 
+
+mysql安装完成后，本地就可以正常访问了.
+
+
+
+但是其它机子还是无法访问,出现10061错误，需要修改一下配置文件，并且重启mysql
+
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'%' IDENTIFIED BY 'mypassword' WI TH GRANT OPTION;
+
+如执行上个命令仍然无效，修改my.cnf文件
+
+[mysqld]
+
+Bind-address=0.0.0.0
+
+ 
+
+
+
+　　修改后，使用netstat -an|grep 3306，如果是 0.0.0.0:3306，哪就是正常的
+
+　　
+
+ 
+
+　　
+
+　　如果还是连接不上，执行如下sql:
+
+装有MySQL的机器上登录MySQL mysql -u root -p密码
+
+执行use mysql;
+
+执行update user set host = '%' where user = 'root';这一句执行完可能会报错，不用管它。
+
+执行FLUSH PRIVILEGES;
+
+经过上面4步，就可以解决这个问题了。 
+注: 第四步是刷新MySQL的权限相关表，一定不要忘了，我第一次的时候没有执行第四步，结果一直不成功，最后才找到这个原因。
+
+ 
+
+ 2.6 解压tomcat
+
+　　直接unzip tomcat.zip 命令就行，将测试项目使用ssh，上传至tomcat/webapps后，进入tomcat/bin目录，使用./catalina.sh run命令启动tomcat的debug方式,这个没什么好说的 ，通过浏览器正常访问。
+
+
+
+
+https://processon.com
+
+
+
+
+
+
+
+
+

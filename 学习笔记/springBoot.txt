@@ -1,0 +1,193 @@
+如何安装springBoot Client
+==========================================================================================
+SPRING BOOT CLI - INSTALLATION
+==============================
+
+Thank you for downloading the Spring Boot CLI tool. Please follow these instructions
+in order to complete your installation.
+
+
+Prerequisites
+-------------
+Spring Boot CLI requires Java JDK v1.8 or above in order to run. Groovy v${groovy.version}
+is packaged as part of this distribution, and therefore does not need to be installed (any
+existing Groovy installation is ignored).
+
+The CLI will use whatever JDK it finds on your path, to check that you have an appropriate
+version you should run:
+
+	java -version
+
+Alternatively, you can set the JAVA_HOME environment variable to point a suitable JDK.
+
+
+Environment Variables
+---------------------
+No specific environment variables are required to run the CLI, however, you may want to
+set SPRING_HOME to point to a specific installation. You should also add SPRING_HOME/bin
+to your PATH environment variable.
+
+
+Shell Completion
+----------------
+Shell auto-completion scripts are provided for BASH and ZSH. Add symlinks to the appropriate
+location for your environment. For example, something like:
+
+  ln -s ./shell-completion/bash/spring /etc/bash_completion.d/spring
+  ln -s ./shell-completion/zsh/_spring /usr/local/share/zsh/site-functions/_spring
+
+
+Checking Your Installation
+--------------------------
+To test if you have successfully installed the CLI you can run the following command:
+
+	spring --version
+
+*****************************************************************************************
+如何使用maven创建一个可以运行的springBoot Web项目
+创建一个文件夹 mkdir mavenproject
+新建           vi pom.xml
+添加配置内容如下:
+               <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+               <modelVersion>4.0.0</modelVersion>
+               <groupId>com.example</groupId>
+               <artifactId>myproject</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+               <parent>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-parent</artifactId>
+               <version>2.1.4.RELEASE</version>
+               </parent>
+               <!-- Additional lines to be added here... -->
+               </project>
+执行           mvn package
+在pom.xml中添加类容如下：
+               <dependencies>
+               <dependency>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-starter-web</artifactId>
+               </dependency>
+               </dependencies>
+执行           mvn dependency:tree
+               mvn package
+在和mavenproject目录下新建src/main/java/Example.java
+在Example.java文件中添加代码如下：
+               import org.springframework.boot.*;
+               import org.springframework.boot.autoconfigure.*;
+               import org.springframework.web.bind.annotation.*;
+               
+               @RestController
+               @EnableAutoConfiguration
+               public class Example {
+               
+                   @RequestMapping("/")
+                   String home() {
+                       return "Hello World!\n";
+                   }
+               
+                   public static void main(String[] args) {
+                       SpringApplication.run(MyFirstSpringBootApplication.class, args);
+                   }
+               }
+进入mavenproject目录中执行mvn spring-boot:run
+成功后输入 curl localhost:8080 查看执行结果
+
+如何以jar包的形式来执行这个maven 项目
+在pom.xml文件的dependicies节点之下添加：
+               <build>
+               <plugins>
+               <plugin>
+               <groupId>org.springframework.boot</groupId>
+               <artifactId>spring-boot-maven-plugin</artifactId>
+               </plugin>
+               </plugins>
+               </build>
+执行           mvn package
+生成的jar包在target目录下
+执行           java -jar target/myproject-0.0.1-SNAPSHOT.jar
+输入           curl localhost:8080                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SpringBoot需要的maven配置文件
+-----------------------------------------------------------------------------------------
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.example</groupId>
+<artifactId>myproject</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+<!-- Inherit defaults from Spring Boot -->
+<parent>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-parent</artifactId>
+<version>2.1.4.RELEASE</version>
+</parent>
+<!-- Add typical dependencies for a web application -->
+<dependencies>
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+</dependencies>
+<!-- Package as an executable jar -->
+<build>
+<plugins>
+<plugin>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-maven-plugin</artifactId>
+</plugin>
+</plugins>
+</build>
+</project>
+----------------------------------------------------------------------------------------------
